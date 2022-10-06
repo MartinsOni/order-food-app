@@ -1,38 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.order {
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 10px 20px 15px silver;
+  background-color: aliceblue;
+  border-bottom: 0.5rem solid rgb(131, 26, 26);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.name {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5rem;
+}
+
+.order-container {
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 0.2rem;
+}
+
+.order-header {
+  color: rgb(36, 36, 36);
+}
+ 
+.foodButton {
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+
+.order-card-container {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
+  margin: 1rem 0;
+}
+.order-input-container {
+  padding: 0.5rem 1rem;
+}
+
+.order-input-container input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+}
+
+.order-input-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.customer-food-container {
+  width: 70vmax;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-grow: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.customer-food-container p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.customer-food-card-container {
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.food-header {
+  margin: 0.5rem;
+}
+
+.customer-food-input-container input {
+  font-size: 1rem;
+  padding: 0.3rem;
+  margin: 0.5rem;
+}
+
+.customer-foods-container {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: space-between;
 }
